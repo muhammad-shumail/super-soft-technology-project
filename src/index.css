@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --speed: 8s;
+  --ring: #3a4ebb;
+  --line: 0.5vmin;
+  --spin: spin var(--speed) linear 0s infinite;
+}
+
+
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.content {
+  width: 30vmin;
+  height: 30vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content div {
+  border-radius: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 var(--line) var(--ring) inset;
+  box-sizing: border-box;
+  animation: var(--spin);
+}
+
+.content>div>div {
+  --ring: #60b2f3;
+  left: 26%;
+  width: 48%;
+  height: 48%;
+}
+
+.content>div>div>div {
+  --ring: #3f6dcc;
+  left: -33%;
+  width: 170%;
+  height: 170%;
+}
+
+.content>div>div>div>div {
+  --ring: #93d1fc;
+  left: 29%;
+  width: 40%;
+  height: 40%;
+}
+
+.content>div>div>div>div>div {
+  --ring: #4597ef;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+.content>div>div>div>div>div>div {
+  --ring: #aacbdb;
+  left: 36.5%;
+  width: 28%;
+  height: 28%;
+}
