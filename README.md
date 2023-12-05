@@ -2,6 +2,13 @@
 
 This project is a demonstration of how to make a CRUD (Create, Read, Update, Delete) operation using mock APIs, by the help of axios and redux toolkit.
 
+## Screenshots
+
+![Alt text](image-1.png)
+![Alt text](image.png)
+![Alt text](image-2.png)
+![Alt text](image-3.png)
+
 ## Technologies used
 
 - TypeScript: A superset of JavaScript that adds static type definitions.
