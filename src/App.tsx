@@ -17,19 +17,41 @@ function App() {
                   <span className="text-2xl font-bold">Student CRUD</span>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
-                    <Link
-                      to="/"
-                      className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-                    >
-                      Home
-                    </Link>
-                    <Link
-                      to="/create-student"
-                      className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-                    >
-                      Create Student
-                    </Link>
+                  <div className="flex space-x-4 justify-between ">
+                    <div>
+                      <Link
+                        to="/"
+                        className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                      >
+                        Home
+                      </Link>
+                      <Link
+                        to="/create-student"
+                        className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                      >
+                        Create Student
+                      </Link>
+                    </div>
+                    <div className="">
+                      <a
+                        href="https://www.linkedin.com/in/muhammad-shumail-ansari/"
+                        className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                      >
+                        Linkedin Profile
+                      </a>
+                      <a
+                        href="https://github.com/muhammad-shumail"
+                        className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                      >
+                        Github Profile
+                      </a>
+                      <a
+                        href="https://github.com/muhammad-shumail/super-soft-technology-project"
+                        className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                      >
+                        Github Repo
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
