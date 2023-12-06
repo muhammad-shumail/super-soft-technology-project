@@ -1,7 +1,7 @@
 // GetStudents.tsx
 import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
-import { myDataActions } from "../features/studentSlice"
+import { studentActions } from "../features/studentSlice"
 import { deleteStudent } from "../service/studentApi"
 
 const GetStudents = ({ data }: { data: any[] }) => {
@@ -17,7 +17,7 @@ const GetStudents = ({ data }: { data: any[] }) => {
   const handleDelete = (id: string) => {
     // Dispatch the deleteData action
     deleteStudent(id)
-    dispatch(myDataActions.deleteData(id))
+    dispatch(studentActions.deleteData(id))
   }
 
   const handleUpdate = (student: any) => {

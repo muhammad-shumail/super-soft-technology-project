@@ -2,7 +2,7 @@
 import { Formik } from "formik"
 import { useDispatch, useSelector } from "react-redux"
 import { useNavigate, useParams } from "react-router-dom"
-import { myDataActions } from "../features/studentSlice"
+import { studentActions } from "../features/studentSlice"
 import { updateStudent } from "../service/studentApi"
 
 const UpdateStudent: React.FC = () => {
@@ -12,7 +12,7 @@ const UpdateStudent: React.FC = () => {
   useSelector((state: any) => state.students || {})
   const handleSubmit = (values: any) => {
     // Dispatch the updateData action
-    dispatch(myDataActions.updateData({ id: parseInt(id), ...values }))
+    dispatch(studentActions.updateData({ id: parseInt(id), ...values }))
     updateStudent(id, values)
     navigate("/")
   }

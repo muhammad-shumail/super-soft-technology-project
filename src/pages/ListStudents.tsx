@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import AnimationLoader from "../components/animationLoader";
 import GetStudents from "../components/getStudents";
-import { myDataActions } from "../features/studentSlice";
+import { studentActions } from "../features/studentSlice";
 import { getAllStudents } from "../service/studentApi";
 
 const ListStudents: React.FC = () => {
@@ -17,14 +17,14 @@ const ListStudents: React.FC = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      dispatch(myDataActions.getDataStart());
+      dispatch(studentActions.getDataStart());
 
       try {
         const response = await getAllStudents();
-        dispatch(myDataActions.getDataSuccess(response.data));
+        dispatch(studentActions.getDataSuccess(response.data));
         console.log(response.data);
       } catch (err) {
-        dispatch(myDataActions.getDataFailure(err));
+        dispatch(studentActions.getDataFailure(err));
       } finally {
         setTimeout(() => {
           setShowLoader(false);

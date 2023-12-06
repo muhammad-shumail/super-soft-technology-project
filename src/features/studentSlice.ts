@@ -53,5 +53,5 @@ export const studentSlice = createSlice({
   },
 })
 
-export const myDataActions = studentSlice.actions
-export const myDataReducer = studentSlice.reducer
+export const studentActions = studentSlice.actions
+export const studentReducer = studentSlice.reducer

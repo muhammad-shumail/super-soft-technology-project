@@ -36,18 +36,21 @@ function App() {
                       <a
                         href="https://www.linkedin.com/in/muhammad-shumail-ansari/"
                         className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                        target="_blank"
                       >
                         Linkedin Profile
                       </a>
                       <a
                         href="https://github.com/muhammad-shumail"
                         className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                        target="_blank"
                       >
                         Github Profile
                       </a>
                       <a
                         href="https://github.com/muhammad-shumail/super-soft-technology-project"
                         className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                        target="_blank"
                       >
                         Github Repo
                       </a>
